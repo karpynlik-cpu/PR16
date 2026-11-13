@@ -1,0 +1,29 @@
+/* Кулінарний блог — єдина тема для всіх сторінок */
+:root{--accent:#b23a48;--accent-dark:#7d2432;--bg:#fff8f1;--text:#2b2118;--card:#ffffff;--line:#ecd9c6}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Georgia,"Times New Roman",serif;background:var(--bg);color:var(--text);line-height:1.6}
+header{background:var(--accent);color:#fff;text-align:center;padding:1.5rem 1rem 0}
+header h1{margin:0;font-size:2.2rem}
+.tagline{margin:.2rem 0 1rem;opacity:.9}
+nav{display:flex;flex-wrap:wrap;justify-content:center;gap:.25rem;background:var(--accent-dark);margin:0 -1rem;padding:.5rem}
+nav a{color:#fff;text-decoration:none;padding:.4rem .9rem;border-radius:4px}
+nav a:hover,nav a.active{background:#fff;color:var(--accent-dark)}
+main{max-width:900px;margin:0 auto;padding:1.5rem 1rem}
+h2,h3{color:var(--accent-dark)}
+a{color:var(--accent)}
+.hero{background:var(--card);border-left:6px solid var(--accent);padding:1rem 1.25rem;border-radius:6px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.75rem;text-align:center}
+.card img{max-width:100%;height:auto;border-radius:6px}
+.dish{display:block;max-width:100%;height:auto;margin:1rem auto;border-radius:8px}
+table{border-collapse:collapse;width:100%;background:var(--card);margin:1rem 0}
+th,td{border:1px solid var(--line);padding:.5rem;text-align:center}
+th{background:var(--accent);color:#fff}
+caption{font-weight:bold;padding:.3rem}
+footer{text-align:center;background:var(--accent-dark);color:#fff;padding:1rem;margin-top:2rem;font-size:.9rem}
+footer a{color:#ffd9a8}
+/* Адаптивність */
+@media (max-width:600px){header h1{font-size:1.6rem}nav{flex-direction:column;align-items:stretch;text-align:center}}
+/* Друк */
+@media print{nav,footer a{display:none}body{background:#fff}}
